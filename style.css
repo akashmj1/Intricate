@@ -1,0 +1,381 @@
+/*
+Theme Name: Electronics Store
+Theme URI: https://example.com
+Author: Template Monster
+Author URI: https://example.com
+Description: A modern e-commerce theme for selling electronics and gadgets.
+Version: 1.0.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: electronics-store
+Domain Path: /languages
+Requires at least: 5.0
+Requires PHP: 7.4
+*/
+
+/* Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+
+a {
+    color: #3bb614;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-9, .col-md-3, .col-md-4, .col-sm-6, .col-sm-8, .col-sm-4 {
+    padding: 0 15px;
+}
+
+.col-md-9 { width: 75%; }
+.col-md-3 { width: 25%; }
+.col-md-4 { width: 33.333%; }
+.col-sm-6 { width: 50%; }
+.col-sm-8 { width: 66.667%; }
+.col-sm-4 { width: 33.333%; }
+
+@media (max-width: 768px) {
+    .col-md-9, .col-sm-8, .col-md-4, .col-sm-6 { width: 100%; }
+    .col-md-3, .col-sm-4 { width: 100%; }
+}
+
+/* Header & Navigation */
+header#header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #d6d5d5;
+}
+
+.site-branding {
+    margin: 20px 0;
+}
+
+.site-title {
+    font-size: 28px;
+    color: #333333;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+.site-title a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    color: #3bb614;
+}
+
+.site-description {
+    color: #777777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+    border: 1px solid #d6d5d5;
+    border-radius: 0;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar-nav > li > a {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #e8e8e8;
+    color: #3bb614;
+}
+
+/* Main Content */
+#main {
+    padding: 20px 0;
+}
+
+.site-main {
+    background-color: #ffffff;
+}
+
+.page-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin: 30px 0 20px;
+}
+
+/* Posts */
+post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6d5d5;
+}
+
+article.post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6d5d5;
+}
+
+.post-thumbnail {
+    margin-bottom: 15px;
+}
+
+.post-thumbnail img,
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-meta {
+    color: #777777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.entry-content {
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3bb614;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #30761c;
+    color: white;
+    text-decoration: none;
+}
+
+/* Sidebar & Widgets */
+.widget-area {
+    padding: 20px 0;
+}
+
+.widget {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d6d5d5;
+}
+
+.widget-title {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    border-bottom: 2px solid #3bb614;
+    padding-bottom: 10px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget li {
+    margin-bottom: 8px;
+}
+
+.widget a {
+    color: #3bb614;
+    text-decoration: none;
+}
+
+.widget a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer#footer {
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    border-top: 1px solid #d6d5d5;
+    padding: 30px 0;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+.footer-widget h3 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-widget li {
+    margin-bottom: 8px;
+}
+
+.footer-widget a {
+    color: #3bb614;
+    text-decoration: none;
+}
+
+.footer-widget a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    text-align: center;
+    color: #777777;
+    font-size: 12px;
+}
+
+.copyright {
+    margin: 0;
+}
+
+/* Comments */
+.comments-area {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #d6d5d5;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Pagination */
+.page-links {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.page-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 3px;
+    background-color: #f0f0f0;
+    color: #333333;
+    text-decoration: none;
+}
+
+.page-links a:hover {
+    background-color: #3bb614;
+    color: white;
+}
+
+/* Search */
+.search-form {
+    margin: 20px 0;
+}
+
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6d5d5;
+    margin-bottom: 10px;
+}
+
+.search-form input[type="submit"] {
+    width: 100%;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.no-results h1 {
+    color: #333333;
+}
+
+/* Utility */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
